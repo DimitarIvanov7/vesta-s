@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/apartment.css">
+    <link rel="stylesheet" href="/css/headernav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/javascript/display-apartments.js"></script>
+    <title>Имот за продажба</title>
+</head>
+<body>
+    
+    <div class="main-nav-container">
+        <!-- <%- include('./partials/nav') %> -->
+    </div>
+    <div class="main-section">
+        <div class="container-main">
+            <h1 class="main-title up-anim"><span>Имот за продажба no5</span></h1>
+            <div class="modal-container">
+                <div class="img-modal-container">
+                    <div class="left-half">
+                        <button class="btn-prev-modal"><i class="fas fa-angle-left fa-4x"></i></button>
+                    </div>
+                    <img class="img-modal" src="/images/app27.jpg" alt=""> 
+                    <button class="close-btn-modal"><i class="fas fa-times fa-3x"></i></button>
+                    <div class="right-half">
+                        <button class="btn-next-modal"><i class="fas fa-angle-right fa-4x"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider-container">
+                <button class="prev"><i class="fas fa-angle-left fa-4x"></i></button>
+                <div class="slider-container">
+                    <div class="slide">
+                        <img class="slide-img" src="/images/app27.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img class="slide-img" src="/images/app67.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img class="slide-img" src="/images/app87.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src="/images/app97.jpg" alt="">
+                    </div>
+                </div>
+                
+                <button class="next"><i class="fas fa-angle-right fa-4x"></i></button>
+                
+            </div>
+
+            <div class="small-img-container">
+                <img class="slide-img-mini" src="/images/app27.jpg" alt="">
+                <img class="slide-img-mini" src="/images/app67.jpg" alt="">
+                <img class="slide-img-mini" src="/images/app87.jpg" alt="">
+                <img class="slide-img-mini" src="/images/app97.jpg" alt="">
+            </div>
+
+            <div class="counter-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            
+            <div class="second-part">
+                <h1 class="second-title">1 - стаен, Банишора: €63,000</h2>
+                <p class="location-main"><span class="size-main">45кв.м - </span> ул. Ген. Столетов, София</p>
+                    
+                <div class="more-info-main">
+                    <div class="more-info-left-col">
+                        <div class="destription">
+                            <h3 class="h3-desc"><span>Описание</span> на имота</h3>
+                            <p class="description">Предлагаме Ви отличен апартамент, находящ се в блок строителство ЕПК от 1980г. на комуникативно място, в непосредствена близост до V-та градска болница, спирки на градски транспорт и множество магазини. </p>         
+                        </div>
+                        
+                        <div class="details-container">
+                            <div class="details-first-col">
+                                <h3 class="h3-details"><span>Основни</span> детайли</h3>
+                                <p>Вид на имота : <span>Апартамент</span></p>
+                                <p>Тип обява : <span>За продажба</span></p>
+                                <p>Цена : <span>€63,000</span></p>
+                                <p>Вид строителство : <span>Панел</span></p>
+                                <p>Година на построяване :<span>1980</span></p>
+                            </div>
+                            <div class="details-second-col">
+                                <h3 class="h3-details"></h3>
+                                <p>Етаж :<span>5/5</span></p>
+                                <p>Площ :<span>74 м²</span></p>
+                                <p>Брокер за контакт :<span>Ася Нейкова</span></p>
+                                <p>Телефон за контакт :<span>0896 611 040
+                                </span></p>
+                            </div>
+                            
+                            <div class="characteristics-container">
+                                <h3 class="h3-charact"><span>Характ</span>еристики</h3>
+                                <div class="characteristics">
+                                    <p>Тип на имота :<span class="span-type">Тристаен</span></p>
+                                    <p>Отопление :<span>Ток</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    <div class="contact-container">
+                        <h2>Изпрати запитване</h2>
+
+                        <div class="contact-info-container">
+                            <p>Имот за продажба</p>
+                            <p>Площ: <span>74 м²</span></p>
+                        </div>
+                        
+                        <p class="contact-price">€63,000</p>
+                        <div class="contact-input-container">
+                            <input type="text" id="name" name="name" placeholder="Имена*">
+                            <input type="tel" id="tel" name="tel" placeholder="Телефон*">
+                            <input type="email" id="email" name="email" placeholder="Имейл*">
+                            <input type="text" id="message" name="message" placeholder="Съобщение">
+                        </div>
+                        
+                        <button class="contact">Свържи се С нас</button>
+                    </div>
+
+                    <div class="map-container">
+                        <h2 id="lat-long">Приблизителна локация</h2>
+
+                        <div id="map"></div>
+                    </div>
+                    
+
+                    <div class="similar-properties">
+                        <h2><span>Подобни</span> имоти</h2>
+                        <div class="similar-container">
+                            <div class="apartment id:1">
+                                <div class="top-part"style="background-image: url('/images/app27.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;">
+                                    <p class="top-offer">ТОП Оферта</p>
+                                    <h1>3-стаен, Манастирски ливади</h1>
+                                    <div class="more-info">
+                                        <p class="location">Манастирски ливади</p>
+                                        <p class="size">91кв.м</p>
+                                        <p class="price">€163,500</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="apartment id:1">
+                                <div class="top-part"style="background-image: url('/images/app27.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;">
+                                    <p class="top-offer">ТОП Оферта</p>
+                                    <h1>3-стаен, Манастирски ливади</h1>
+                                    <div class="more-info">
+                                        <p class="location">Манастирски ливади</p>
+                                        <p class="size">91кв.м</p>
+                                        <p class="price">€163,500</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="apartment id:1">
+                                <div class="top-part"style="background-image: url('/images/app27.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;">
+                                    <p class="top-offer">ТОП Оферта</p>
+                                    <h1>3-стаен, Манастирски ливади</h1>
+                                    <div class="more-info">
+                                        <p class="location">Манастирски ливади</p>
+                                        <p class="size">91кв.м</p>
+                                        <p class="price">€163,500</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+
+    </div>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcZRgMj9AOCjArpePUdt_nEvkRbf1B8B0&callback=initMap">
+</script>
+
+    <script src="/javascript/apartment.js"></script>
+
+
+</body>
+</html>

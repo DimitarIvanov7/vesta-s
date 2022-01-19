@@ -1,0 +1,35 @@
+//scroll anim
+.up-anim{
+    transform: translateY(-76px);
+    opacity: 0;
+    transition: 650ms;
+}
+
+.up-anim-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.left-anim{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 650ms;
+}
+
+.left-anim-show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.right-anim{
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 650ms;
+}
+
+.right-anim-show {
+    transform: translateX(0);
+    opacity: 1;
+}

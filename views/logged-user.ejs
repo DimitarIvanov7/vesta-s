@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/logged-user.css">
+    <title>Logged User | Vesta-S</title>
+</head>
+<body>
+    <h1 class="main-title">Контролен панел</h1>
+    <div class="control-btns">
+        <button onclick="javascript:history.back()" class="apartments">Апартаменти</button>
+        <button onclick="window.location='/new-user';" class="users">Потребители</button>
+        <button class="articles">Статии</button>
+    </div>
+    <section class="main-logged">
+        <!-- <div class="container-users"></div> -->
+        <div class="main-container">
+            <div class="container-logged">
+                <div class="apart-container">
+                    <h1>Въведи Апартамент</h1>
+                    <form class="form-apart" action="/logged-user" method="POST" enctype="multipart/form-data">
+                        <div class="main-info-container">
+                            <h2>Главна информация</h2>
+                            <input type="text" class="inpt" id="title" name="Titles" placeholder="Заглавие" required>
+                            <input type="text" class="inpt" id="price" name="Prices" placeholder="Цена в €" required>
+                            <input type="text" class="inpt" id="size" name="Size" placeholder="Площ в кв.м" required>
+                            <input type="text" class="inpt" id="loc" name="Locations" placeholder="Адрес" required>
+                        </div>
+
+                        <div class="description">
+                            <h2>Описание</h2>
+                            <textarea id="desc" class="inpt" name="Description" placeholder="Описание" rows="4" cols="50" required></textarea>
+                        </div>
+                        
+                        <div class="main-details-container">
+                            <h2>Основни детайли</h2>
+                            <input type="text" class="inpt" id="hood" name="Neighborhoods" placeholder="Квартал" required>
+
+                            <select id="type" class="inpt" name="Types" placeholder="Вид на имота" required>
+                                <option value="" disabled selected>Избери вид на имота</option>
+                                <option value="Апартамент">Апартамент</option>
+                                <option value="Парцел">Парцел</option>
+                                <option value="Къща">Къща</option>
+                            </select>
+
+                            <select id="type-building" class="inpt" name="BuildingTypes" placeholder="Вид строителство" required>
+                                <option value="" disabled selected>Вид строителство</option>
+                                <option value="Панел">Панел</option>
+                                <option value="ЕПК">ЕПК</option>
+                                <option value="Тухла">Тухла</option>
+                                <option value="Не">Не</option>
+                            </select>
+
+                            <input type="text" class="inpt" id="year" name="YearsBuild" placeholder="Година на построяване" required>
+
+                            <input type="text" class="inpt" id="floor" name="Floors" placeholder="Етаж" required>
+
+                            <select id="broker-contact" class="inpt" name="BrokerContacts" placeholder="Брокер за контакт" required>
+                                <option value="" disabled selected>Брокер за контакт</option>
+                                <option value="Ася Нейкова">Ася Нейкова</option>
+                                <option value="Ирена Иванова">Ирена Иванова</option>
+                                <option value="Миглена Балабанова">Миглена Балабанова</option>
+                            </select>
+
+                            <input type="text" class="inpt" id="phone-contact" name="PhoneContacts" placeholder="Телефон за контакт" required>
+                        </div>
+                        
+                        <div class="characteristics-container">
+                            <h2>Характеристики</h2>
+
+                            <select id="type-rooms" class="inpt" name="Rooms" placeholder="Брой стаи/Вид" required>
+                                <option value="" disabled selected>Брой стаи/Вид</option>
+                                <option value="Едностаен">Едностаен</option>
+                                <option value="Двустаен">Двустаен</option>
+                                <option value="Тристаен">Тристаен</option>
+                                <option value="Четиристаен">Четиристаен</option>
+                                <option value="Ателие">Ателие</option>
+                                <option value="Парцел">Парцел</option>
+                            </select>
+
+                            <select id="heating" class="inpt" name="Heatings" placeholder="Отопление" required>
+                                <option value="" disabled selected>Отопление</option>
+                                <option value="ТЕЦ">ТЕЦ</option>
+                                <option value="ТОК">ТОК</option>
+                                <option value="ГАЗ">ГАЗ</option>
+                                <option value="Локално">Локално</option>
+                                <option value="Не">Не</option>
+                            </select>
+                        </div>
+                        
+                        <div class="pictures-container">
+                            <h2>Снимки</h2>
+                            <input type="file" id="imgfile" name="Images" multiple accept="image/png, image/jpg" required>
+                        </div>
+                        
+                        <button type="submit" id="upload-btn" class="submit-btn">Въведи</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="change-and-delete-aparts">
+
+                <% aparts.forEach(apart => { %>
+                    <div class="apart-container">
+                        <a class="single" href="/apartment/<%=apart.Title %>"><h3 class="title-del"><%= apart.Title %></h3></a> <i id="delete-btn" data-doc="<%=apart.id %>" class="fas fa-window-close"></i> 
+                    </div>
+                <% }); %>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="/javascript/logged-user.js">
+    </script>
+    
+</body>
+</html>

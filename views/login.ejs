@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Vesta-S | Login</title>
+</head>
+<body>
+    <section class="main">
+        <i class="fas fa-user fa-3x"></i>
+        <form class="container" action="/login" method="post">
+            <h1>Логин</h1>
+            <p>Име</p>
+            <input type="text" id="name" name="name" placeholder="Въведи име">
+            <p>Парола</p>
+            <input type="text" id="password" name="password" placeholder="Въведи парола">
+            <%let message = ""%>
+            <p class="wrong-login"><%=message%></p>
+            <button class="login-btn">Влез</button>
+        </form>
+            
+
+    </section>
+    <script src="/javascript/login.js"></script>
+</body>
+</html>

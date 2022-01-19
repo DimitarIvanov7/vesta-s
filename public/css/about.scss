@@ -1,0 +1,192 @@
+html {
+    height: 100%;
+    // overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    --primary-color: #E8D7CF;
+    --secondary-color:#243951;
+    --background: #f2f2f2;
+
+    font-family: 'intro_light_altregular', sans-serif;
+
+    background: url('/images/img-1.jpg') no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(232, 215, 207, 0.6);
+}
+
+.main-nav-container {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 97;
+    background-color: var(--background);
+    overflow-x: hidden;
+    
+}
+
+.main-container {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background);
+    overflow-x: hidden;
+
+    .left-col {
+        width: 60%;
+        min-width: 634px;
+        margin-top: 2rem;
+        overflow-x: hidden;
+    }
+
+    p {
+        margin-left: 3rem;
+    }
+
+    h1{
+        margin: 0 0 4rem 3rem;
+    }
+
+    .about-info {
+
+        .features-buy-sell {
+            margin-left: 3rem;
+
+            h2 {
+                margin: 2rem 1rem;
+                padding: 0;
+            }
+
+            ul {
+                margin: 0 1rem;
+                padding: 0;
+            }
+        }
+
+        .features-consulting {
+            background: #243951;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: white;
+                margin: 2rem 2rem 2rem 3rem;
+                padding: 0;
+            }
+
+            ul {
+                margin: 0 1rem 0 3rem;
+                padding: 0;
+
+                li {
+                    color: white;
+                }
+            }
+
+            button {
+                margin: 1rem auto 2rem 3rem;
+                padding: 1rem;
+                justify-self: flex-start;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: x-large;
+                color: var(--secondary-color);
+                background: #E8D7CF;
+                border: none;
+                transition: all 0.5s ease;
+            }
+
+            button:hover {
+                background: #e9e2e0;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 2em;
+
+                span {
+                    margin-right: 10px;
+
+                    i {
+                        border-radius: 25%;
+                        padding: .3em;
+                        background: #243951;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    .right-col {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+
+        img {
+            width: 75%;
+            min-width: 400px;
+            margin: 5rem 1rem 1rem 0;
+        }
+    }
+}
+
+#map {
+    width: 100%;
+    height: 30rem;
+}
+
+
+.business-location-img {
+    display: none;
+}
+
+
+@media screen and (max-width: 1073px){
+    .main-container .left-col {
+        width: 100%;
+        min-width: 0;
+
+        h1 {
+            margin-left: 1rem;
+        }
+
+        .about-info > .features-buy-sell {
+            margin-left: 1rem;
+        }
+
+    }
+
+    .main-container .about-info .features-consulting ul {
+        margin-left: 1rem;
+    }
+
+    .about-info > p, .features-buy-sell {
+        margin-left: 1rem;
+    }
+
+    .main-container .about-info .features-consulting button {
+        margin-left: 1rem;
+    }
+
+    .main-container .right-col {
+        width: 100%;
+        min-width: 0;
+
+        img {
+            width: 90%;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

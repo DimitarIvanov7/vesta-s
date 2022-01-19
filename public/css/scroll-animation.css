@@ -1,0 +1,42 @@
+.up-anim {
+  -webkit-transform: translateY(-76px);
+          transform: translateY(-76px);
+  opacity: 0;
+  -webkit-transition: 650ms;
+  transition: 650ms;
+}
+
+.up-anim-show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.left-anim {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: 650ms;
+  transition: 650ms;
+}
+
+.left-anim-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.right-anim {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-transition: 650ms;
+  transition: 650ms;
+}
+
+.right-anim-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+/*# sourceMappingURL=scroll-animation.css.map */

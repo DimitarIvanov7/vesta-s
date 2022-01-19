@@ -1,0 +1,502 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  --primary-color: #E8D7CF;
+  --secondary-color:#243951;
+  --background: #f2f2f2;
+  background: url("/images/img-1.jpg") no-repeat fixed;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(232, 215, 207, 0.6);
+          box-shadow: inset 0 0 0 1000px rgba(232, 215, 207, 0.6);
+  font-family: 'intro_light_altregular', sans-serif;
+}
+
+.main-nav-container {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 5rem;
+  background: var(--background);
+  z-index: 99;
+}
+
+section.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--background);
+  margin: 3rem 4rem;
+}
+
+section.main h1.main-title {
+  text-align: center;
+  width: 70%;
+  margin: 4rem 0 0 0;
+  font-size: xx-large;
+  font-style: italic;
+  border-bottom: 1px rgba(128, 128, 128, 0.166) solid;
+  padding-bottom: .5rem;
+}
+
+section.main h1.main-title span {
+  color: white;
+  background: var(--secondary-color);
+  padding: 5px;
+}
+
+section.main h1.main-title span.span-2 {
+  display: none;
+}
+
+section.main .healine, section.main .main-info {
+  margin: 1rem;
+}
+
+section.main .bigger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5em;
+  height: 100%;
+  width: 100%;
+}
+
+section.main .bigger-container .filters-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  margin-left: 1.5rem;
+  position: relative;
+  width: 65rem;
+  max-width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px rgba(128, 128, 128, 0.166) solid;
+  padding-bottom: .5rem;
+}
+
+section.main .bigger-container .filters-container p {
+  color: white;
+  background: var(--secondary-color);
+  padding: 5px;
+}
+
+section.main .bigger-container .filters-container button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--secondary-color);
+}
+
+section.main .bigger-container .filters-container button .arrow-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid var(--secondary-color);
+  -webkit-transition: border-width .6s ease, -webkit-transform .6s ease;
+  transition: border-width .6s ease, -webkit-transform .6s ease;
+  transition: border-width .6s ease, transform .6s ease;
+  transition: border-width .6s ease, transform .6s ease, -webkit-transform .6s ease;
+}
+
+section.main .bigger-container .filters-container button .rotated {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+section.main .bigger-container .filters-container .active {
+  background: var(--secondary-color);
+  color: white;
+}
+
+section.main .bigger-container .filters-container .active .arrow-down {
+  display: inline-block;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+section.main .bigger-container .filters-container button:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+section.main .bigger-container .filters-container button:hover .arrow-down {
+  border-top: 10px solid white;
+}
+
+section.main .bigger-container .filters-container .search-input-container {
+  position: relative;
+}
+
+section.main .bigger-container .filters-container input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: flex-end;
+  width: 10rem;
+  height: 2rem;
+  font-size: 15px;
+  padding-left: 2rem;
+}
+
+section.main .bigger-container .filters-container i#search {
+  position: absolute;
+  left: 10px;
+  bottom: 11px;
+}
+
+section.main .bigger-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+section.main .bigger-container .container .apartment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35em;
+  margin: 2rem 0 1rem 3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.main .bigger-container .container .apartment .top-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.main .bigger-container .container .apartment p.top-offer {
+  background: var(--background);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px;
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+section.main .bigger-container .container .apartment h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 15.3rem;
+  background: var(--primary-color);
+  padding: 9px;
+  position: absolute;
+  z-index: 89;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.main .bigger-container .container .apartment .more-info {
+  margin-top: 12em;
+  background: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px 5px #cfc9c9;
+          box-shadow: 0 0 10px 5px #cfc9c9;
+}
+
+section.main .bigger-container .container .apartment .more-info p.location {
+  padding-top: 1rem;
+}
+
+section.main .bigger-container .container .apartment .more-info p.size {
+  margin-top: 0;
+}
+
+section.main .bigger-container .container .apartment .more-info p.price {
+  font-size: x-large;
+  margin-top: 1rem;
+}
+
+section.main .bigger-container .container .apartment:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+section.main .bigger-container .container .hidden-app {
+  display: none;
+}
+
+section.main .bigger-container .no-results {
+  display: none;
+  margin-top: 5rem;
+  margin-bottom: 30rem;
+  font-weight: bold;
+}
+
+.business-location-img {
+  display: none;
+}
+
+@media screen and (max-width: 1212px) {
+  section.main {
+    margin: 3rem 0;
+  }
+  section.main .bigger-container .container .apartment {
+    width: 45rem;
+  }
+  section.main .bigger-container .container .apartment h1 {
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  section.testimonials .big-container {
+    height: 50rem;
+  }
+  section.social-media h2 span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  section.slider {
+    height: 400px;
+  }
+  section.slider .container button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 15vh;
+  }
+  section.testimonials .big-container {
+    height: 47rem;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  section.main .bigger-container .container .apartment {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 7rem;
+  }
+  section.main .bigger-container .container .apartment .top-part {
+    height: 30rem;
+  }
+  section.main .bigger-container .container .apartment .top-part p {
+    font-size: x-large;
+  }
+  section.main .bigger-container .container .apartment .top-part h1 {
+    font-size: xx-large;
+    margin-top: 18.5rem;
+  }
+  section.main .bigger-container .container .apartment .more-info {
+    margin-top: 13rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p {
+    font-size: xx-large;
+    margin-bottom: 1rem;
+  }
+  section.main .bigger-container .filters-container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section.main .bigger-container .container .apartment {
+    width: 80%;
+    margin-bottom: 7rem;
+  }
+  section.main .bigger-container .container .apartment .top-part {
+    height: 30rem;
+  }
+  section.main .bigger-container .container .apartment .top-part p {
+    font-size: large;
+  }
+  section.main .bigger-container .container .apartment .top-part h1 {
+    font-size: xx-large;
+  }
+  section.main .bigger-container .container .apartment .more-info {
+    margin-top: 14rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p {
+    margin-bottom: 1rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p.location {
+    margin-top: 2rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p.price {
+    font-size: xx-large;
+  }
+  section.main .bigger-container .filters-container {
+    margin: 0 2rem 2rem 2rem;
+  }
+  section.main .bigger-container .filters-container button {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  section.main .bigger-container .filters-container input {
+    width: 12rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  section.main .bigger-container .filters-container input {
+    width: 12rem;
+    margin-top: 1rem;
+  }
+  section.main .bigger-container .container .apartment .top-part h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  section.main .bigger-container .filters-container p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.main .bigger-container .container .apartment {
+    width: 80%;
+    margin-bottom: 7rem;
+  }
+  section.main .bigger-container .container .apartment .top-part {
+    height: 23rem;
+  }
+  section.main .bigger-container .container .apartment .top-part p {
+    font-size: large;
+  }
+  section.main .bigger-container .container .apartment .top-part h1 {
+    font-size: 20px;
+    margin-top: 12.5rem;
+  }
+  section.main .bigger-container .container .apartment .more-info {
+    margin-top: 8rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p {
+    font-size: large;
+    margin-bottom: .5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  section.main .bigger-container .filters-container button {
+    margin: 0 .5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.main .bigger-container .filters-container button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  section.main h1.main-title .span-1 {
+    display: none;
+  }
+  section.main h1.main-title span.span-2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  section.main .bigger-container .filters-container button {
+    margin: 0 2px;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  section.main .bigger-container .container .apartment .top-part h1 {
+    font-size: 17px;
+  }
+  section.main .bigger-container .container .apartment .more-info p {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p.location {
+    margin-top: 1rem;
+  }
+  section.main .bigger-container .container .apartment .top-part {
+    height: 22rem;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  section.main .bigger-container .container .apartment {
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+  section.main .bigger-container .container .apartment .top-part {
+    height: 23rem;
+  }
+  section.main .bigger-container .container .apartment .top-part p.location {
+    font-size: 14px;
+  }
+  section.main .bigger-container .container .apartment .top-part h1 {
+    font-size: 17px;
+  }
+  section.main .bigger-container .container .apartment .more-info {
+    margin-top: 8rem;
+  }
+  section.main .bigger-container .container .apartment .more-info p {
+    font-size: 17px;
+    margin-bottom: .5rem;
+  }
+}
+/*# sourceMappingURL=buy-home.css.map */

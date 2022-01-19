@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/scroll-animation.css">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/javascript/display-apartments.js"></script>
+    <script src="/javascript/display-animation.js"></script>
+
+    <title>Vesta-s</title>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="/assets/footage-homepage.mp4" type="video/mp4">
+    </video>
+    <nav class="main-nav">
+        <div class="nav-header">
+            <div class="nav-container">
+                <a href="#" class="navbar-brand up-anim"><img src="/images/vesta-logo-1.png" alt=""></a>
+                <ul class="links-pc">
+                    <li><a href="/buy-home">Купи</a></li>
+                    <li><a href="/sell-property">Продай</a></li>
+                    <li><a href="/about-us">За нас</a></li>
+                    <li><a href="/contact">Контакти</a></li>
+                    <li><a href="/login">Логин</a></li>
+
+                </ul>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu-container">
+            <ul class="links-mobile">
+                <a href="/buy-home"><li>Купи</li></a>
+                <a href="/sell-property"><li>Продай</li></a>
+                <a href="/about-us"><li>За нас</li></a>
+                <a href="/contact"><li>Контакти</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <p class="info up-anim">Веста-с ТОП агенция за недвижими имоти в София</p>
+            <p class="question up-anim">Искам да...</p>
+            <div class="buttons">
+                <buttton class="btn buy up-anim" onClick="location.href='/buy-home'">Купя имот</buttton>
+                <buttton class="btn rent up-anim" onClick="location.href='/sell-property'">Продам имот</buttton>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-appointment">
+        <div class="container">
+            <span><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></span><a href="/contact"><p>Запази Час за Консултация!</p></a><span><i class="fas fa-arrow-right fa-2x"></i></span></a> 
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="img-container feature">
+                <img class="author-photo left-anim" src="/images/pexels-christina-morillo-1181424.jpg" alt="">
+            </div>
+            <div class="about-us feature right-anim">
+                <h1>Агенция VESTA – S е основана през 2000г</h1>
+                <p>15 годишният ни опит на пазара на недвижими имоти гарантира на нашите клиенти и колеги отлично професионално обслужване и 100% коректност при използването на нашите услуги.<br><br> Ние сме специализирана агенция за посредничество при покупко – продажба и отдаване под наем на недвижими имоти. Работим с уважаван екип от Нотариуси и отличен екип от адвокати, което гарантира на нашите клиенти защитата на интересите им.</p>
+                <a href="/about-us"><button class="learn-about-us">Научи Повече</button></a>
+            </div>
+            <div class="features-buy-sell feature left-anim">
+                <h1>Посредничество</h1>
+                <ul class="features-buy-sell-list">
+                    <li><span><i class="fas fa-check"></i></span>Посредничество при покупко-продажба на недвижим имот</li>
+                    <li><span><i class="fas fa-check"></i></span>Посредничество при отдаване под наем на недвижим имот</li>
+                    <li><span><i class="fas fa-check"></i></span>Посредничество при наемане на недвижим имот</li>
+                </ul>
+            </div>
+
+            <div class="features-consulting feature right-anim">
+                <h1>Консултации</h1>
+                <ul class="features-consulting-list">
+                    <li><span><i class="fas fa-check"></i></span>Юридическа консултация и подготовка на документи за нотариално изповядване на сделка</li>
+                    <li><span><i class="fas fa-check"></i></span>Консултация и съдействие при закупуване с ипотечен кредит</li>
+                </ul>
+                <a href="/contact"><button class="contact-us">Свържи се с нас</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="container">
+            <button class="prev"><i class="fas fa-angle-left fa-4x"></i></button>
+            <div class="slider-container">
+                
+                <div class="slide">
+                    <img class="slide-img up-anim" src="/images/luxury-apart-slider-3-reseized.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img class="slide-img up-anim" src="/images/luxury-apart-slider-1-reseized.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img class="slide-img up-anim" src="/images/luxury-apart-slider-2-reseized.jpg" alt="">
+                </div>
+                
+            </div>
+            <button class="next"><i class="fas fa-angle-right fa-4x"></i></button>
+            
+        </div>
+    </section>
+
+    <!-- top offers -->
+    <section class="top-offers">
+        <h1 class="healine">Нашите ТОП Оферти</h1>
+        <p class="main-info">Предложения на цени от €50,000 до €790,000</p>
+
+        <div class="bigger-container">
+            <div class="container-top-offers">
+                <!-- <div class="apartment id:1">
+                    <div class="top-part"style="background-image: url('/images/app27.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;">
+
+                    
+                        <p class="top-offer">ТОП Оферта</p>
+                        <h1>2 - стаен, ул. Любляна</h1>
+                        <div class="more-info">
+                            <p class="location">Овча Купел</p>
+                            <p class="size">86 м²</p>
+                            <p class="price">€103,200</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>-->
+
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1>Какво мислят хората за нас</h1>
+        <div class="big-container">
+            <div class="slider-container-test">
+                <img src="/images/testimon-new-1.jpg" alt="" class="main-pic left-anim">
+                <div class="info-test right-anim">
+                    <h2>Веста-с са страхотни, надминаха всякакви очаквания</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nesciunt eos ipsa libero dolorem odio autem consequuntur ea accusamus impedit magni illum architecto, repellendus eligendi a neque! Architecto, rem nisi? <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non numquam magnam veniam beatae. Ut, laudantium ipsum cum culpa mollitia aspernatur alias eos harum nostrum vel veniam, inventore ducimus, natus tempore. <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ab. Accusamus, consectetur maiores. Placeat rem saepe quibusdam molestiae enim doloribus.</p>
+                </div>
+            </div>
+
+            <div class="slider-container-test">
+                <img src="/images/testimon-new-2.jpg" alt="" class="main-pic left-anim">
+                <div class="info-test right-anim">
+                    <h2>Обичам Веста-с</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nesciunt eos ipsa libero dolorem odio autem consequuntur ea accusamus impedit magni illum architecto, repellendus eligendi a neque! Architecto, rem nisi? <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non numquam magnam veniam beatae. Ut, laudantium ipsum cum culpa mollitia aspernatur alias eos harum nostrum vel veniam, inventore ducimus, natus tempore. <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ab. Accusamus, consectetur maiores. Placeat rem saepe quibusdam molestiae enim doloribus.</p>
+                </div>
+            </div>
+
+            <div class="slider-container-test">
+                <img src="/images/testimon-new-3.jpg" alt="" class="main-pic left-anim">
+                <div class="info-test right-anim">
+                    <h2>Препродавам бъбреци</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nesciunt eos ipsa libero dolorem odio autem consequuntur ea accusamus impedit magni illum architecto, repellendus eligendi a neque! Architecto, rem nisi? <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non numquam magnam veniam beatae. Ut, laudantium ipsum cum culpa mollitia aspernatur alias eos harum nostrum vel veniam, inventore ducimus, natus tempore. <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ab. Accusamus, consectetur maiores. Placeat rem saepe quibusdam molestiae enim doloribus.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="button-container">
+            <button class="prevBtn"><i class="fas fa-angle-left fa-4x"></i></button>
+            <button class="nextBtn"><i class="fas fa-angle-right fa-4x"></i></button>
+        </div>
+    </section>
+
+    <!-- social media -->
+  <section class="social-media">
+        <div class="container">
+            <i class="fab fa-instagram fa-4x" aria-hidden="true"></i>
+            <h2> <span>_____________________  </span>Последвайте ни в социалните мрежи  <span> _____________________</span></h2>
+            <div class="fb-youtube-container">
+                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"><a href="#"></a></i>
+                <i class="fab fa-youtube fa-2x"><a href="#"></a></i>
+            </div>
+        </div>
+    </section>
+     
+    <!-- footer -->
+    <footer>
+        <div class="first-part footer">
+            <img src="/images/vesta-logo-1.png" alt="">
+            <h3>Топ Софийска агенция за недвижими имоти</h3>
+            <div class="socials">
+                <i class="fab fa-instagram fa-2x" aria-hidden="true"><a href="#"></a></i>
+                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"><a href="#"></a></i>
+                <i class="fab fa-youtube fa-2x"><a href="#"></a></i>
+            </div>
+        </div>
+        <div class="second-part footer">
+            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>vesta-s@abv.bg</p>
+            <p class="tel"><i class="fa fa-phone" aria-hidden="true"></i>088 727 1638</p>
+            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                София, ул.Цар симеон 12</p>
+        </div>
+        <div class="third-part footer">
+           <p class="about-info">Веста-с е агенция за недживими основана 2000г.</p> 
+           <p class="copyright">Copyright © 2021 | Всички права запазени</p>
+        </div>
+    </footer>
+
+    <script src="/javascript/home.js"></script>
+</body>
+</html>

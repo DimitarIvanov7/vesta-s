@@ -1,0 +1,181 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/login-background.jpg") no-repeat fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.main {
+  background: #E8D7CF99;
+  position: relative;
+}
+
+section.main i {
+  background: #243951;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.5rem;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -3rem;
+  left: 9.5rem;
+}
+
+section.main .container {
+  margin: 2rem;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.main .container h1 {
+  font-size: xx-large;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section.main .container p {
+  font-size: x-large;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+section.main .container input {
+  border: none;
+  border-bottom: 2px black solid;
+  background: none;
+  margin-bottom: 2rem;
+  height: 2rem;
+  font-size: 24px;
+}
+
+section.main .container input::-webkit-input-placeholder {
+  font-size: large;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+section.main .container button {
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: xx-large;
+  border-radius: 20px;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #243951;
+  color: white;
+}
+
+section.main .container p.wrong-login {
+  font-size: large;
+}
+
+section.main-logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+section.main-logged .container-logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E8D7CF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+section.main-logged .container-logged h1 {
+  font-size: xx-large;
+}
+
+section.main-logged .container-logged .apart-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 0;
+  margin: 2rem;
+  width: 30rem;
+}
+
+section.main-logged .container-logged .apart-container h2 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+section.main-logged .container-logged .apart-container input {
+  margin-bottom: 1rem;
+  font-size: large;
+}
+
+section.main-logged .container-logged .apart-container button {
+  margin: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: xx-large;
+  border-radius: 20px;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #243951;
+  color: white;
+}
+
+section.main-logged .container-logged .apart-container button:hover {
+  background: #24395183;
+}
+
+section.main-logged .container-logged .apart-container .pictures-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: .5rem;
+}
+
+section.main-logged .container-logged .apart-container .pictures-container input {
+  cursor: pointer;
+}
+/*# sourceMappingURL=login.css.map */

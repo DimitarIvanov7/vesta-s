@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/headernav.css">
+    <link rel="stylesheet" href="/css/buy-home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/scroll-animation.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/javascript/display-apartments.js"></script>
+    <script src="/javascript/display-animation.js"></script>
+    
+    <title>Купи имот</title>
+</head>
+<body>
+    <div class="main-nav-container">
+        <%- include('./partials/nav') %>
+    </div>
+    <section class="main">
+        <h1 class="main-title up-anim"><span class="span-1"> &nbsp &nbsp ПРОДАЖБИ  &nbsp &nbsp</span><span class="span-2">ПРОДАЖБИ</span></h1>
+        <div class="bigger-container">
+            
+            <div class="filters-container up-anim">
+                <p>Сортирай по: </p>
+                <button data-id="btn" class="price-filter">Цена <div class="arrow-down" data-id="btn-arr"></div></button>
+                <button data-id="btn" class="size-filter">Площ <div class="arrow-down" data-id="btn-arr"></div></button>
+                <button data-id="btn" class="type-filter">Вид на имота <div class="arrow-down" data-id="btn-arr"></div></button>
+                <button data-id="btn" class="floor-filter">Етаж <div class="arrow-down" data-id="btn-arr"></div></button>
+                <div class="search-input-container">
+                    <input type="text" id="search" name="search" placeholder="Търси по квартал">
+                    <i id="search" class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- <div class="apartment id:1">
+                    <div class="top-part"style="background-image: url('/images/app27.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;">
+                        <p class="top-offer">ТОП Оферта</p>
+                        <h1>3-стаен, Манастирски ливади</h1>
+                        <div class="more-info">
+                            <p class="location">Манастирски ливади</p>
+                            <p class="size">91кв.м</p>
+                            <p class="price">€163,500</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="no-results">
+                <p>Няма намерени резултати</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div class="footer-container">
+
+    </div>
+    
+    <script src="/javascript/header.js"></script>
+    <script src="/javascript/buy-appart.js"></script>
+    
+</body>
+</html>
