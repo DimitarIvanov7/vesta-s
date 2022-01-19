@@ -14,7 +14,7 @@ const { render } = require('ejs');
 const Apartment = ApartmentMod.Apartment
 const dbURI = ApartmentMod.dbURI
 const User = UserMod.User
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const alertMsg = require('alert');
 const jwt = require('jsonwebtoken');
 
