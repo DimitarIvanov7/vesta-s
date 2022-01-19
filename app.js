@@ -26,7 +26,7 @@ const port = process.env.PORT || 5000
 app.use(express.json());
 
 // connect to mongodb and // listen for req
-mongoose.connect(dbURI || process.env.MONGODB_URI,  {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGODB_URI || dbURI,  {useNewUrlParser: true, useUnifiedTopology: true})
     .then((result)=> app.listen(port))
     .catch((err)=> console.log(err))
 
