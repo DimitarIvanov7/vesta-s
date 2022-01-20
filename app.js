@@ -66,7 +66,6 @@ Apartment.find()
     })
 
 
-
 // post apartment
 app.post('/logged-user', (req, res)=>{
     multipleUpload(req,res,(err) =>{
@@ -101,9 +100,6 @@ app.post('/logged-user', (req, res)=>{
             apartment.save()
                 .then((result)=>{
                     // res.redirect('/logged-user')
-                    // res.end();
-                    // res.redirect('back');
-                    // res.redirect(req.originalUrl)
                 }) 
         }
     })
@@ -160,24 +156,6 @@ app.post('/login', async (req, res)=>{
                     console.log(err);
                 })  
     }
-
-    // function doFetch(accessToken){
-    //     let url = 'http://127.0.0.1:3000/logged-user';
-
-    //     axios.get(url, {
-    //         method: 'GET',
-    //         headers: {
-    //             Accept: 'html',
-    //             Authorization: 'Bearer ' + accessToken,
-    //         },
-    //         credentials: 'include'
-    //     }).then((response)=>{
-    //         console.log(response.data);
-    //         res.write(response.data)
-    //     })
-
-        
-    // }
     
 })
 
