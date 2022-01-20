@@ -1,5 +1,4 @@
-const axios = require('axios');
-
+// const axios = require('axios');
 
 require('dotenv').config()
 const fs = require('fs');
@@ -12,18 +11,25 @@ const UserMod = require('./models/users-mod.js');
 const path = require('path/posix');
 const { render } = require('ejs');
 const Apartment = ApartmentMod.Apartment
-const dbURI = ApartmentMod.dbURI
+// const dbURI = ApartmentMod.dbURI
 const User = UserMod.User
 const bcrypt = require('bcryptjs');
 const alertMsg = require('alert');
 const jwt = require('jsonwebtoken');
 
-const https = require('https');
+const favicon = require('serve-favicon');
+const path = require('path');
+
 
 const app = express();
 const port = process.env.PORT || 5000
 
 app.use(express.json());
+
+//favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+
 
 // connect to mongodb and // listen for req
 mongoose.connect(process.env.MONGODB_URI,  {useNewUrlParser: true, useUnifiedTopology: true})
