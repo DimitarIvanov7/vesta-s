@@ -18,7 +18,7 @@ const alertMsg = require('alert');
 const jwt = require('jsonwebtoken');
 
 const favicon = require('serve-favicon');
-const path = require('path');
+const pathico = require('path');
 
 
 const app = express();
@@ -27,7 +27,7 @@ const port = process.env.PORT || 5000
 app.use(express.json());
 
 //favicon
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(pathico.join(__dirname, 'public', 'favicon.ico')));
 
 
 
