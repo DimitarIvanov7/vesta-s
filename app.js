@@ -18,7 +18,7 @@ const bcrypt = require('bcryptjs');
 const alertMsg = require('alert');
 const jwt = require('jsonwebtoken');
 
-const https = require('https')
+const https = require('https');
 
 const app = express();
 const port = process.env.PORT
