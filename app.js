@@ -56,14 +56,14 @@ let multipleUpload = upload.fields([{name:'Images'}])
 
 // get the aparment data from MongoDB - move that to  another file?
 
-// Apartment.find()
-//     .then((result)=>{
-//         let data = JSON.stringify(result);
-//         fs.writeFileSync('./public/apparts.json', data);
-//     })
-//     .catch((err)=>{
-//         console.log(err)
-//     })
+Apartment.find()
+    .then((result)=>{
+        let data = JSON.stringify(result);
+        fs.writeFileSync('./public/apparts.json', data);
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
 
 
 
