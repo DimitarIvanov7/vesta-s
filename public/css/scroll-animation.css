@@ -1,6 +1,6 @@
 .up-anim {
-  -webkit-transform: translateY(-76px);
-          transform: translateY(-76px);
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
   opacity: 0;
   -webkit-transition: 650ms;
   transition: 650ms;

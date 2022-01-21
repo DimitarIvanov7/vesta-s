@@ -329,7 +329,7 @@ section.main .bigger-container .no-results {
   section.main .bigger-container .container .apartment {
     width: 60%;
     margin: auto;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
   section.main .bigger-container .container .apartment .top-part {
     height: 30rem;
@@ -356,7 +356,7 @@ section.main .bigger-container .no-results {
 @media screen and (max-width: 980px) {
   section.main .bigger-container .container .apartment {
     width: 80%;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
   section.main .bigger-container .container .apartment .top-part {
     height: 30rem;
@@ -413,7 +413,7 @@ section.main .bigger-container .no-results {
 @media screen and (max-width: 500px) {
   section.main .bigger-container .container .apartment {
     width: 80%;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
   section.main .bigger-container .container .apartment .top-part {
     height: 23rem;

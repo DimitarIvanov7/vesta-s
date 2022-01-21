@@ -248,6 +248,14 @@ counterDots.forEach(function(dot, index){
     });
 });
 
+//send inquiries
+const inputForm = document.querySelector(".contact-input-container");
+
+inputForm.addEventListener('submit', ()=>{
+    alert("Имейлът е изпратен, очаквайте отговор")
+    window.location.href = window.location.href;
+});
+
 
 //google maps
 const addresApart = document.querySelector(".location-main").innerHTML;
