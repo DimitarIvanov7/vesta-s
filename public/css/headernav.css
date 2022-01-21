@@ -2,17 +2,12 @@ nav {
   height: 5rem;
   margin: 0;
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
   position: fixed;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-box-shadow: 0 0 10px 5px #cfc9c9;
           box-shadow: 0 0 10px 5px #cfc9c9;
-}
-
-nav > .nav-header {
-  overflow-x: hidden;
 }
 
 nav > .nav-header .nav-container {
@@ -27,7 +22,6 @@ nav > .nav-header .nav-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  overflow-x: hidden;
 }
 
 nav > .nav-header .nav-container img {

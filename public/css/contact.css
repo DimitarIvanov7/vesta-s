@@ -83,6 +83,11 @@ body {
 }
 
 .main-container .contact-form-container .right-col {
+  width: 50%;
+  padding-bottom: 7rem;
+}
+
+.main-container .contact-form-container .right-col form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,8 +95,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
-  padding-bottom: 7rem;
+  width: 100%;
 }
 
 .main-container .contact-form-container .right-col input {

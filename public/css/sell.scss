@@ -43,6 +43,11 @@ body {
         width: 100%;
         flex-wrap: wrap;
 
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
         h1 {
             color: white;
             font-size: 40px;

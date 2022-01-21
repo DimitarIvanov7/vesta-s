@@ -38,6 +38,7 @@ body {
         width: 80%;
         flex-wrap: wrap;
 
+
         h1 {
             color: white;
             font-size: 40px;
@@ -66,10 +67,16 @@ body {
         }
 
         .right-col {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
             width: 50%;
             padding-bottom: 7rem;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
 
             input {
                 margin-top: 1rem;

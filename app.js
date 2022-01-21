@@ -62,14 +62,14 @@ let multipleUpload = upload.fields([{name:'Images'}])
 
 // get the aparment data from MongoDB - move that to  another file?
 
-Apartment.find()
-    .then((result)=>{
-        let data = JSON.stringify(result);
-        fs.writeFileSync('./public/apparts.json', data);
-    })
-    .catch((err)=>{
-        console.log(err)
-    })
+// Apartment.find()
+//     .then((result)=>{
+//         let data = JSON.stringify(result);
+//         fs.writeFileSync('./public/apparts.json', data);
+//     })
+//     .catch((err)=>{
+//         console.log(err)
+//     })
 
 
 // post apartment
@@ -109,6 +109,12 @@ app.post('/logged-user', (req, res)=>{
                 }) 
         }
     })
+})
+
+//send emails
+app.post('/email', (req, res)=>{
+    console.log(req.body);
+    res.redirect("/")
 })
 
 //login page
