@@ -122,7 +122,7 @@ function openCloseModal(apparts){
             <script src="/javascript/display-apartments.js"></script>
             <script src="/javascript/display-animation.js"></script>
             
-            <title>Имот за продажба № <span class="span-id">${id+1}</span></title>
+            <title>Имот за продажба</title>
         </head>
         <body>
             <div class="main-nav-container">
@@ -210,13 +210,16 @@ function openCloseModal(apparts){
                                     <p>Площ: <span>${size}</span></p>
                                 </div>
                                 <p class="contact-price">${price}</p>
-                                <div class="contact-input-container">
+                                <form class="contact-input-container" action="/email" method="POST">
+                                    <input type="text" id="subject" name="subject" value="Запитване ${title}">
                                     <input type="text" id="name" name="name" placeholder="Имена*">
                                     <input type="tel" id="tel" name="tel" placeholder="Телефон*">
                                     <input type="email" id="email" name="email" placeholder="Имейл*">
                                     <input type="text" id="message" name="message" placeholder="Съобщение">
-                                </div>
-                                <button class="contact">Свържи се С нас</button>
+                                    <button type="submit" class="contact">Свържи се С нас</button>
+                               </form>
+                                
+                                
                             </div>
 
                             <div class="map-container">

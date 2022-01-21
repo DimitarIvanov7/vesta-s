@@ -83,6 +83,10 @@ body {
                 font-size: x-large;
             }
 
+            input#subject{
+                display: none;
+            }
+
             input#message {
                 padding-bottom: 10rem;
             }

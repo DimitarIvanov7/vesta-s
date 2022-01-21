@@ -115,6 +115,10 @@ body {
   width: 19rem;
 }
 
+.main-container .contact-form-container .right-col input#subject {
+  display: none;
+}
+
 .main-container .contact-form-container .right-col input#message {
   padding-bottom: 10rem;
 }

@@ -456,6 +456,10 @@ body {
   margin-left: 0;
 }
 
+.main-section .container-main .second-part .more-info-main .contact-container input#subject {
+  display: none;
+}
+
 .main-section .container-main .second-part .more-info-main .contact-container input#message {
   padding-bottom: 6rem;
 }

@@ -20,6 +20,7 @@ const jwt = require('jsonwebtoken');
 const favicon = require('serve-favicon');
 const pathico = require('path');
 
+const sendMail = require('./mail');
 
 const app = express();
 const port = process.env.PORT || 5000
@@ -114,6 +115,10 @@ app.post('/logged-user', (req, res)=>{
 //send emails
 app.post('/email', (req, res)=>{
     console.log(req.body);
+
+    //send email
+    const {email, name, tel, type, message, subject} = req.body;
+    sendMail(email,  name,  tel, type,  message, subject);
     res.redirect("/")
 })
 
