@@ -6,7 +6,7 @@ A website where real estate agents can post properties they sell. Users can see 
 
 ## Tech Stack
 
-**Client:** CSS/SCSS, HTML, Javascript
+**Client:** CSS/SASS, HTML, Javascript
 
 **Server:** Node, Express, MongoDB
 
